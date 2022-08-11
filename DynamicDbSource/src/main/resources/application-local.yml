@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    click:
+      driverClassName: ru.yandex.clickhouse.ClickHouseDriver
+      url: jdbc:clickhouse://xxxxxxxxx:8123/default
+      initialSize: 10
+      maxActive: 100
+      minIdle: 10
+      maxWait: 6000
+      username: xxxxxxxxx
+      password: xxxxxxxxxx
+    pg:
+      url: jdbc:postgresql://xxxxxxxxxxx:5432/example
+      username: xxxxxxxxxxx
+      password: xxxxxxxxxxx
+      driverClassName: org.postgresql.Driver
+

@@ -1,0 +1,15 @@
+server:
+  tomcat:
+    uri-encoding: UTF-8
+  port: 8080
+spring:
+  profiles:
+    active: local
+  application:
+    name: druid-datasource
+
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    type-aliases-package: com.click.house.entity
+    mapper-locations: classpath:mapper/*.xml
